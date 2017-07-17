@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Network:Management Productivity: Tools:</Category>
+  <Name>postgresql</Name>
+  <Description>
+  Postgresql Database.
+  </Description>
+  <Overview>
+  Postgresql Database.
+  Install this Server before installing anything needing DB connectivity.
+  </Overview>
+  <GitHub>https://github.com/hetutree</GitHub>
+  <Repository>hetutree/templates</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>DB_USER</Name>
+      <Value>postgres</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_PASS</Name>
+      <Value>postgres</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/postgresql</HostDir>
+      <ContainerDir>/var/lib/postgresql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>1d2e22f</Version>
+  <WebUI></WebUI>
+  <Banner>https://wiki.postgresql.org/images/1/1a/PostgreSQL.Banner.blue.468x60.gif</Banner>
+  <Icon>http://www.iconattitude.com/icons/open_icon_library/apps/png/256/postgresql.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
