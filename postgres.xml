@@ -11,7 +11,7 @@
   Install this Server before installing anything needing DB connectivity.
   </Overview>
   <GitHub>https://github.com/hetutree/templates/postgres</GitHub>
-  <Repository>hetutree/templates</Repository>
+  <Repository>templates</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
